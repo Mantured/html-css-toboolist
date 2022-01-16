@@ -5,11 +5,35 @@
     font-family: sans-serif, Arial, Helvetica;
 }
 
+.header-container{
+    margin: 10px 0px 5px 0;
+}
 .logo{
-    padding: 15px;
+    margin-left: 15px;
 }
 
-.logo-text{
-    font-size: 30pt;
-    
+.logo-text {
+    font-size: 33pt;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.main-container{
+    background-color: rgb(243, 243, 243);
+    height: 500px;
+    overflow: auto;
+}
+
+.box-to-do{
+    margin: 50px 150px 10px 150px;
+    background-color: white;
+    height: 700px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.add-something{
+    margin-top: 10px;
+    padding: 10px 0px 10px 40px;
+    border-bottom: 1px solid gray;
 }
