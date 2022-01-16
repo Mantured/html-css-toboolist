@@ -33,7 +33,25 @@
 }
 
 .add-something{
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 10px 0px 10px 40px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.button{
+    padding: 5px 10px 5px 10px;
+    font-size: 10pt;
+    border: none;
+    border-radius: 5px;
+}
+
+#selected-button{
+    background-color: rgb(101, 139, 255);
+    color: white;
+}
+
+#unselected-button{
+    background-color: white;
+    border: 1px solid rgb(218, 218, 218);
+    color: rgb(212, 212, 212);
 }
