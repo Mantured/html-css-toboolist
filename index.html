@@ -9,59 +9,90 @@
 </head>
 <body>
     <!--logo in testa + add task e add ssection-->
-    <header class="header-container">
-        <img class="logo" src="../html-css-toboolist/img/logo copia.png" alt="image of a romb - boolean logo">   
-        <span class="logo-text">Toboolist</span>
+    <header>
+        <img id="logo" src="../html-css-toboolist/img/logo copia.png" alt="image of a romb - boolean logo">   
+        <span id="logo-text">Toboolist</span>
     </header>
-    <!--3 sezioni differenti, prova json-->
-    <main class="main-container">
-        
-        <!--box centrale-->
-        <section class="box-to-do">
-            
-            <!-- contentuto in testa con due bottoni -->
-            <div class="add-something">
-                <div>
-                    <button class="button" id="selected-button">Add Task</button>
-                    <button class="button" id="unselected-button">Add Section</button>
-                </div>
-                
-                
+    <!-- al posto delle classi logo, ho inserito l'id come nella correzione -->
+    <!--3 sezioni differenti, quindi 3 div differenti-->
+    <main>
+        <div class="container">
+            <div class="top">
+                <button class="btn btn-blue bg-blue">Add Task</button>
+                <button class="btn btn-white">Add Section</button>
             </div>
+            <div class="tasks">
+                <!-- !ricordarsi di ragionare per contenitori, capire quale strada è più semplice, perchè spesso è anche la più corretta -->
+                <ul> <!-- 1 unorderedlist con 3 li (list) al suo intenro titolo lista in h3 allo stesso livello un'altra unordered list con i dovuti li e contenuti in span -->
+                    <li> <!-- new task  -->
+                        <h3>
+                            &#9207; New Task
+                        </h3>
+                        <ul>
+                            <li> 
+                                <span class="circle checked">&check;</span> 
+                                Quarterly Newsletter 
+                                <span class="tag bg-blue">Editorial</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><!-- today -->
+                        <h3>
+                            &#9207; Today
+                        </h3>
+                        <ul> 
+                            <li> 
+                                <span class="circle checked">&check;</span>  
+                                Recruiting blog post 
+                                <span class="tag bg-blue">Editorial</span>
+                            </li>
+                            <li> 
+                                <span class="circle unchecked">&cross;</span> 
+                                Mobile app launch 
+                                <span class="tag bg-violet">Q1 Goals</span>
+                            </li>
 
-            <!--contenuto principale-->
-            <div class="container-list">
-
-                <ul class="list">
-                    <li><span class="title">New Task</span></li>
-                    <ul class="sub-list">
-                        <li class="done"><span class="content-list">Quarterly Newsletter </span><button class="editorial">Editorial</button>
-                    </ul>
-                    
-                    <li><span class="title">Today</span></li>
-                    <ul class="sub-list">
-                        <li class="done"><span class="content-list">Recruiting blog post </span><button class="editorial">Editorial</button>
-                        <li class="done"><span class="content-list">Mobile app luaunch </span><button class="goals">Q1 Goals</button>
-                        <li class="undone"><span class="content-list">Interview Jhon H. </span><button class="recruiting">Recruiting</button>
-                        <li class="done"><span class="content-list">Summit update to mobile storefront </span><button class="mobile">Mobile</button>
-                    </ul>
-
-                    <li><span class="title">Upcoming</span></li>
-                    <ul class="sub-list">
-                        <li class="undone"><span class="content-list">Schedule meeting with Alex </span><button class="tindermatch">Match</button>
-                        <li class="done"><span class="content-list">Hompage refresh </span><button class="website">Website</button>
-                        <li class="done"><span class="content-list">Onboard new Sales team members </span><button class="sales">Sales</button>
-                        <li class="done"><span class="content-list">Review editorial calendar </span><button class="editorial">Editorial</button>
-                    </ul>
-
+                            <li>  
+                                <span class="circle unchecked">&cross;</span>
+                                Interview John H.
+                                <span class="tag bg-green">Recruiting</span>
+                            </li>
+                            <li> 
+                                <span class="circle checked">&check;</span>
+                                Summit update to mobile storefronts
+                                <span class="tag bg-orange">Mobile</span></li>
+                        </ul>
+                    </li>
+                    <li><!-- upcoming -->
+                        <h3>
+                            &#9207; Upcoming
+                        </h3>
+                        <ul>
+                            <li>  
+                                <span class="circle unchecked">&cross;</span>
+                                Schedule meeting with Alex
+                            </li>
+                            <li>
+                                <span class="circle checked">&check;</span>
+                                Homepage refresh
+                                <span class="tag bg-pink">Website</span>
+                            </li>
+                            <li> 
+                                <span class="circle checked">&check;</span>
+                                Onboard new Sales team members
+                                <span class="tag bg-lime">Sales</span>
+                            </li>
+                            <li> 
+                                <span class="circle checked">&check;</span>
+                                Review editorial calendar 
+                                <span class="tag bg-blue">Editorial</span>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-        </section>
-
+        </div>
     </main>
-    <!--inventa un footer che qui non c'è-->
-    <footer>
-
-    </footer>
+    
 </body>
 </html>

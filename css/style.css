@@ -1,189 +1,124 @@
+/* Reset con stellina */
+
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #f6f8f9;
     font-family: sans-serif, Arial, Helvetica;
 }
 
-.header-container{
-    margin: 10px 0px 5px 0;
-}
-.logo{
-    margin-left: 15px;
-}
-
-.logo-text {
-    font-size: 33pt;
-    font-weight: bold;
-    vertical-align: top;
-}
-
-.main-container{
-    background-color: rgb(243, 243, 243);
-    width: auto;
-    height: auto;
-    overflow: auto;
-}
-
-.box-to-do{
-    padding-bottom: 340px;
-    margin: 50px 150px 10px 150px;
+header{
+    height: 75px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
     background-color: white;
-    
-    border-radius: 10px;
-    overflow: auto;
 }
 
-.add-something{
-    margin-top: 5px;
-    padding: 10px 0px 10px 40px;
-    border-bottom: 1px solid rgb(238, 238, 238);
+li{
+    list-style: none; /* gli stiamo dicendo che le liste non avranno uno stile definito */
+    padding: 10px 0; /* L'area di riempimento di un elemento è lo spazio tra il suo contenuto e il suo bordo. andando a modificare il contenuto  - i margini invece sono l'opposto*/
+    color: #434851;
 }
 
-.button{
-    padding: 5px 10px 5px 10px;
-    font-size: 10pt;
-    border: none;
-    border-radius: 5px;
-}
-
-.container-list{
-    padding: 40px 0px 0px 60px;
-    font-size: 15pt;
-}
-
-.list{
-    list-style-type: "\25BE";
-}
-
-.title{
-    margin-left: 5px;
-    font-weight: 600;
-}
-.sub-list{
-    padding:10px 0px 10px 0px;
-}
-
-.done{
-    list-style-type: none;
-    padding-top:5pt;
-}
-
-
-.done:before{
-    border: 1px solid green;
-    border-radius: 50%;
-    content: "\2713";
+.container{
+    width: 75%;
+    margin: 0 auto;
     background-color: white;
-    color: green;
-    padding: 1px 4px 1px 4px;
-    
 }
 
-.undone{
-    list-style-type: none;
-    padding-top: 5pt;
+.top{
+    height: 50px;
+    padding: 0 50px;
+    line-height: 50px; /* sostanzialmente l'interlinea */
+    border-bottom: 2px solid #f6f8f9;
 }
 
-.undone:before{
-    border: 1px solid red;
-    border-radius: 50%;
-    content: "\2717";
-    background-color: white;
-    color: red;
-    padding: 1px 4px 1px 4px;
+.btn{
+    border:none;
+    padding: 7px 14px;
+    border-radius: 7px; /* angoli arrotondati */
 }
 
-.content{
-    color: black;
-    padding-left: 5px;
+.btn-white{
+    color: gray;
+    border: solid 1px black;
 }
 
-.content-list{
-    margin: 5px;
-    padding-left: 5px;
-    
-
-}
-
-.editorial{
-    background-color: rgb(101, 206, 255);
-    border-radius: 12px;
-    border: none;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    font-size: 10pt;
-    color:white;
-}
-
-.goals{
-    background-color: rgb(168, 101, 255);
-    border-radius: 12px;
-    border: none;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    font-size: 10pt;
-    color:white;
-}
-
-.recruiting{
-    background-color: rgb(145, 206, 158);
-    border-radius: 12px;
-    border: none;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    font-size: 10pt;
-    color:white;
-}
-
-.mobile{
-    background-color: rgb(228, 151, 36);
-    border-radius: 12px;
-    border: none;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    font-size: 10pt;
-    color:white;
-}
-
-.tindermatch{
-    background-color: rgb(228, 30, 30);
-    border-radius: 12px;
-    border: none;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    font-size: 10pt;
-    color:white;
-}
-
-
-.website{
-    background-color: rgb(221, 30, 228);
-    border-radius: 12px;
-    border: none;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    font-size: 10pt;
-    color:white;
-}
-
-.sales{
-    background-color: rgb(132, 179, 94);
-    border-radius: 12px;
-    border: none;
-    padding: 5px 10px 5px 10px;
-    text-align: center;
-    font-size: 10pt;
-    color:white;
-}
-
-#selected-button{
-    background-color: rgb(101, 206, 255);
+.btn-blue{
     color: white;
+    border: solid 1px #14aaf5;
 }
 
-#unselected-button{
-    background-color: white;
-    border: 1px solid rgb(218, 218, 218);
-    color: rgb(212, 212, 212);
+.tasks{
+    padding: 20px 50px; 
 }
+
+.circle{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center; /* allineamento testo */
+    font-size: .65em;
+    border-radius: 50%;
+    display: inline-block; 
+    margin-right: .5em;
+    border: 1px transparent solid;
+}
+
+.checked{
+    color: rgb(7, 202, 7);
+    border-color: rgb(7, 202, 7);
+}
+
+.unchecked{
+    color: rgb(220, 0, 0);
+    border-color: rgb(220, 0, 0);
+}
+
+/* cerchiamo di raggruppare le proprietà rindondanti */
+.tag{
+    color: white;
+    font-size: .7em;
+    padding: 6px 12px;
+    border-radius: 10px;  
+    background-color: grey;
+}
+
+.bg-blue{
+    background-color: #09a9ed;
+}
+
+.bg-orange{
+    background-color: #ff9b00;
+}
+
+.bg-green{
+    background-color: #2cc6ab;
+}
+
+.bg-violet{
+    background-color: #ab5de6;
+}
+
+.bg-lime{
+    background-color: #a3d116;
+}
+
+.bg-pink{
+    background-color: #ec4a9d;
+}
+
+#logo{
+    height: 100%;
+    vertical-align: bottom; /* comando per allineare a piacimento l'immagine rispetto al testo, sembrerà che l'immagine rimane ferma e il testo si sposta, ma è solo una percezione causacontenitore troppo piccolo */
+}
+
+    
+    #logo-text{
+        font-size: 2.3em;
+        font-weight: 900;
+    }
